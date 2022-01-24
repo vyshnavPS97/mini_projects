@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    padding: 20px 0;
+}
+.navbar-nav{
+    padding-right: 100px;
+}
+.navbar-brand h2{
+    color: green;
+    font-weight: 800;
+    font-family: FunSized;
+}
+.navbar-brand{
+    padding-left: 100px;
+
+
+}
+.nav-item{
+    font-weight: 800;
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+.navbar-light .navbar-nav .nav-item .nav-link:hover,
+.navbar-light .navbar-nav .active .nav-link
+{
+    background: forestgreen;
+    color : white;
+}
+.navbar-light .navbar-nav .nav-item .nav-link
+{
+ padding: 20px 20px;
+
+}
+
+.banner{
+    position: relative;
+    background: url("../images/cover5.jpg");
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.main{
+    padding-top: 100px;
+}
+.main h2{
+    font-family: "Brush Script Std";
+    font-size: 100px;
+    color: black;
+}
+.main h4{
+    font-family: "Kozuka Gothic Pr6N EL";
+    color: forestgreen;
+}
+.main .flavours{
+    color: lawngreen;
+}
+.main h4{
+    text-align: center;
+}
+.main .fast{
+    color: black;
+    font-size: 50px;
+    text-align: center;
+    font-family: "Kozuka Gothic Pr6N EL";
+}
+.main .num{
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    font-family: "Kozuka Gothic Pr6N EL";
+}
+.main .imgg{
+    text-align: center;
+}
+.serve{
+    font-family: Aprilea;
+    font-size: 40px;
+    color: chartreuse;
+}
+.foot{
+    background-color:forestgreen;
+    color:white;
+}

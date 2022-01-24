@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>juice store</title>
+    <link rel="stylesheet" href="{% static 'stylesheets/style3.css' %}">
+    <link rel="stylesheet" href="{% static 'stylesheets/style2.css' %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+</head>
+
+<body class="banner">
+
+<header>
+
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+          <a class="navbar-brand" href="#"><h2 style="font-size: 60px">Juice Hub</h2></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-lg-auto">
+              <li class="nav-item active">
+                <a class="nav-link text-light" href="#">Home<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/myapp/about">About</a>
+              </li>
+                 <li class="nav-item">
+                <a class="nav-link" href="/myapp/logins">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/myapp/drinks">Drinks</a>
+              </li>
+            </ul>
+
+          </div>
+      </div>
+</nav>
+
+
+</header>
+<section class="main">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8">
+                <h2>Enjoy Your Favorite <span class="flavours">Flavours</span></h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <h4>A healthy and a holistic way to lose weight</h4>
+            </div>
+            <div class="col-sm-4">
+                <h4>Reset your body & kick off a new diet</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <h1>_____________________________________________________</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <h2 class="fast">Use Our <span class="flavours"> Fast Delivery </span>Feature</h2>
+            </div>
+            <div class="col-sm-12">
+                <h2 class="num">Just Dail<a href="#"><span class="flavours"> 04936-663366 </span></a></h2>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-sm-12 imgg">
+                <img src="{% static 'images/bottle.png'%}" style="height: 150px; width:70px" align="center">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 imgg">
+                <h1 class="serve">We Serve You The Best</h1>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<footer class="page-footer font-small blue pt-4 foot">
+
+  <div class="container-fluid text-center text-md-left">
+
+    <div class="row">
+
+      <div class="col-md-6 mt-md-0 mt-3">
+
+        <h5 class="text-uppercase">Juice Hub</h5>
+        <p>We provide the best quality fresh juices which helps you to refresh your soul and mind</p>
+        <p>24 x 7 services and home delivery available, keep in touch with us</p>
+      </div>
+      <hr class="clearfix w-100 d-md-none pb-3">
+
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <h5 class="text-uppercase">Follow Us On</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#" style="color: blue"><i class="fab fa-facebook"></i> Facebook</a>
+          </li>
+          <li>
+            <a href="#" style="color: deepskyblue"><i class="fab fa-twitter-square"></i> Twitter</a>
+          </li>
+          <li>
+            <a href="#" style="color: mediumvioletred"><i class="fab fa-instagram"></i> Instagram</a>
+          </li>
+          <li>
+            <a href="#" style="color: white"><i class="fab fa-whatsapp"></i>Whatsapp</a>
+          </li>
+        </ul>
+
+      </div>
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <h5 class="text-uppercase">For more queries contact</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#" style="color: white">+91 9123547896</a>
+          </li>
+          <li>
+            <a href="#" style="color: white">+91 8123547895</a>
+
+        </ul>
+
+      </div>
+    </div>
+
+  </div>
+  <div class="footer-copyright text-center py-3">© 2021 Copyright:
+    <a href="#">JuiceHub.com</a>
+  </div>
+</footer>
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

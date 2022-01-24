@@ -1,0 +1,38 @@
+.mains h1{
+    font-family: Aprilea;
+    font-size: 70px;
+    color: green;
+
+}
+.mains{
+    padding-top: 100px;
+}
+
+.em {
+    color: green;
+    text-align: center;
+}
+.reglink{
+    color:green;
+    font-size: 20px;
+    font-family: "Arial Narrow";
+}
+.social .reglinks{
+    color:green;
+    font-size: 20px;
+    font-family: "Arial Narrow";
+}
+.social{
+    text-align: center;
+}
+.finger{
+    font-family: Aprilea;
+    color: forestgreen;
+    font-size: 30px;
+}
+.mainsec{
+    padding-top: 100px;
+}
+.panel-title {display: inline;font-weight: bold;}
+.checkbox.pull-right { margin: 0; }
+.pl-ziro { padding-left: 0px; }

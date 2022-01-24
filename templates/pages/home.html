@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>juice store</title>
+    <link rel="stylesheet" href="{% static 'stylesheets/style3.css' %}">
+    <link rel="stylesheet" href="{% static 'stylesheets/style2.css' %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+</head>
+
+<body style="background: url({% static 'images/home2.jpg' %});background-position: center;background-size: cover;">
+
+<header>
+
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+          <a class="navbar-brand" href="#"><h2 style="font-size: 60px">Juice Hub</h2></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-lg-auto">
+              <li class="nav-item active ">
+                <a class="nav-link text-light" href="#">My profile<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/myapp/show">My orders</a>
+              </li>
+                 <li class="nav-item ">
+                <a class="nav-link" href="#">Offers</a>
+              </li>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/myapp/logout">Logout</a>
+              </li>
+            </ul>
+
+          </div>
+      </div>
+</nav>
+
+
+</header>
+<section class="mainsec">
+    <div class="container">
+        <p class="text" style="font-size: 30px; font-family: Aprilea; text-align: center; color: green">Welcome {{ client.cli_name }}</p>
+        <div class="row">
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <img class="card-img-top" src="{% static 'images/ferroro.png' %}" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Ferroro rocher</h5>
+                    <p class="card-text ">place your order.. Now at RS.95 </p>
+                    <a href="/myapp/placeorders" class="btn btn-success">Order</a>
+                      <a href="#" class="btn btn-warning">add to favorites</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <img class="card-img-top" src="{% static 'images/apple2.jpg' %}" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Apple shake</h5>
+                    <p class="card-text">place your order.. Now at RS.70</p>
+                    <a href="#" class="btn btn-success">Order</a>
+                      <a href="#" class="btn btn-warning">add to favorites</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <img class="card-img-top" src="{% static 'images/mojjito.jpg' %}" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">place your order.. Now at RS.95</p>
+                    <a href="#" class="btn btn-success">Order</a>
+                      <a href="#" class="btn btn-warning">add to favorites</a>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <img class="card-img-top" src="{% static 'images/ferroro.png' %}" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Ferroro rocher</h5>
+                    <p class="card-text ">place your order.. Now at RS.95 </p>
+                    <a href="#" class="btn btn-success">Order</a>
+                      <a href="#" class="btn btn-warning">add to favorites</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <img class="card-img-top" src="{% static 'images/apple2.jpg' %}" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Apple shake</h5>
+                    <p class="card-text">place your order.. Now at RS.70</p>
+                    <a href="#" class="btn btn-success">Order</a>
+                      <a href="#" class="btn btn-warning">add to favorites</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <img class="card-img-top" src="{% static 'images/mojjito.jpg' %}" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">place your order.. Now at RS.95</p>
+                    <a href="#" class="btn btn-success">Order</a>
+                      <a href="#" class="btn btn-warning">add to favorites</a>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <img class="card-img-top" src="{% static 'images/ferroro.png' %}" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Ferroro rocher</h5>
+                    <p class="card-text ">place your order.. Now at RS.95 </p>
+                    <a href="#" class="btn btn-success">Order</a>
+                      <a href="#" class="btn btn-warning">add to favorites</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <img class="card-img-top" src="{% static 'images/apple2.jpg' %}" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Apple shake</h5>
+                    <p class="card-text">place your order.. Now at RS.70</p>
+                    <a href="#" class="btn btn-success">Order</a>
+                      <a href="#" class="btn btn-warning">add to favorites</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <img class="card-img-top" src="{% static 'images/mojjito.jpg' %}" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">place your order.. Now at RS.95</p>
+                    <a href="#" class="btn btn-success">Order</a>
+                      <a href="#" class="btn btn-warning">add to favorites</a>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<footer class="page-footer font-small blue pt-4 foot">
+
+  <!-- Footer Links -->
+  <div class="container-fluid text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mt-md-0 mt-3">
+
+        <!-- Content -->
+        <h5 class="text-uppercase">Juice Hub</h5>
+        <p>We provide the best quality fresh juices which helps you to refresh your soul and mind</p>
+        <p>24 x 7 services and home delivery available, keep in touch with us</p>
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">Follow Us On</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!" style="color: blue"><i class="fab fa-facebook"></i> Facebook</a>
+          </li>
+          <li>
+            <a href="#!" style="color: deepskyblue"><i class="fab fa-twitter-square"></i> Twitter</a>
+          </li>
+          <li>
+            <a href="#!" style="color: mediumvioletred"><i class="fab fa-instagram"></i> Instagram</a>
+          </li>
+          <li>
+            <a href="#!" style="color: white"><i class="fab fa-whatsapp"></i>Whatsapp</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">For more queries contact</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!" style="color: white">+91 9123547896</a>
+          </li>
+          <li>
+            <a href="#!" style="color: white">+91 8123547895</a>
+
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2021 Copyright:
+    <a href="#">JuiceHub.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

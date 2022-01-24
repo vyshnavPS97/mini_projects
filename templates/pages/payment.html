@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>juice store</title>
+    <link rel="stylesheet" href="{% static 'stylesheets/style3.css' %}">
+    <link rel="stylesheet" href="{% static 'stylesheets/style2.css' %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+</head>
+
+<body style="background: url({% static 'images/home2.jpg' %});background-position: center;background-size: cover;">
+
+<header>
+
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+          <a class="navbar-brand" href="#"><h2 style="font-size: 60px">Juice Hub</h2></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-lg-auto">
+              <li class="nav-item ">
+                <a class="nav-link text" href="/myapp/home">My profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/myapp/show">My orders</a>
+              </li>
+                 <li class="nav-item active">
+                <a class="nav-link" href="#">place order<span class="sr-only">(current)</span></a>
+              </li>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/myapp/logout">Logout</a>
+              </li>
+            </ul>
+
+          </div>
+      </div>
+</nav>
+
+
+</header>
+<section class="mainsec">
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1 class="text" style="font-size: 40px; font-family: 'Arial Black';color: green" align="left">Pay Rupees {{ amount }}/-</h1>
+        </div>
+    </div>
+    <div class="row" style="padding-top: 40px; padding-bottom: 80px">
+        <div class="col-xs-12 col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title text-success" style="font-size: 30px;">
+                        Payment Details
+                    </h3>
+                </div>
+                <div class="panel-body">
+                    <form action="/myapp/payeds" method="post">
+                        {% csrf_token %}
+                    <div class="form-group">
+                        <label for="cardNumber">
+                            CARD NUMBER</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="cardNumber" placeholder="Valid Card Number" name="cardnumber"
+                                required autofocus />
+                            <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-7 col-md-7">
+                            <div class="form-group">
+                                <label for="expityMonth">
+                                    EXPIRY DATE</label>
+                                <div class="col-xs-6 col-lg-6 pl-ziro">
+                                    <input type="text" class="form-control" id="expityMonth" placeholder="MM" name="month" required />
+                                </div>
+                                <div class="col-xs-6 col-lg-6 pl-ziro">
+                                    <input type="text" class="form-control" id="expityYear" placeholder="YY" name="year"required /></div>
+                            </div>
+                        </div>
+                        <div class="col-xs-5 col-md-5 pull-right">
+                            <div class="form-group">
+                                <label for="cvCode">
+                                    CVV</label>
+                                <input type="password" class="form-control" id="cvCode" placeholder="CVV" name="cvv" required />
+                            </div>
+                        </div>
+                    </div>
+                        <button class="btn btn-success btn-lg btn-block" type="submit">Pay</button>
+                    </form>
+                </div>
+            </div>
+            <br/>
+
+            <p class="text-success" style="font-size: 30px; font-family: 'Arial Black'">{{ mes }}</p>
+        </div>
+        </div>
+    </div>
+    <p class="text-success">{{ mes }}</p>
+</div>
+
+</section>
+
+
+<footer class="page-footer font-small blue pt-4 foot">
+
+  <!-- Footer Links -->
+  <div class="container-fluid text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mt-md-0 mt-3">
+
+        <!-- Content -->
+        <h5 class="text-uppercase">Juice Hub</h5>
+        <p>We provide the best quality fresh juices which helps you to refresh your soul and mind</p>
+        <p>24 x 7 services and home delivery available, keep in touch with us</p>
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">Follow Us On</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!" style="color: blue"><i class="fab fa-facebook"></i> Facebook</a>
+          </li>
+          <li>
+            <a href="#!" style="color: deepskyblue"><i class="fab fa-twitter-square"></i> Twitter</a>
+          </li>
+          <li>
+            <a href="#!" style="color: mediumvioletred"><i class="fab fa-instagram"></i> Instagram</a>
+          </li>
+          <li>
+            <a href="#!" style="color: white"><i class="fab fa-whatsapp"></i>Whatsapp</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">For more queries contact</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!" style="color: white">+91 9123547896</a>
+          </li>
+          <li>
+            <a href="#!" style="color: white">+91 8123547895</a>
+
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2021 Copyright:
+    <a href="#">JuiceHub.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
